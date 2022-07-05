@@ -16,6 +16,10 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
 html {
   font-size: 28px;
 }
@@ -98,4 +102,18 @@ button:focus {
 .advice-dice-button:hover,
 .advice-dice-button:focus {
   box-shadow: 0 0 1.5rem var(--neon-green);
+}
+
+.advice-dice-button.fetching {
+  animation: 2s linear infinite rotateLoop;
+}
+
+@keyframes rotateLoop {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }
