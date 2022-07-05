@@ -8,7 +8,7 @@ const adviceDiceButton = document.querySelector('#rolAdviceDice');
 function updateAdvice() {
   let req = new XMLHttpRequest();
 
-  req.open('GET', adviceSlipAPIUrl);
+  req.open('GET', adviceSlipAPIUrl + '?_=' + new Date().getTime());
 
   req.onreadystatechange = () => {
     if (req.readyState !== 4 || req.status !== 200) return;

@@ -11,3 +11,13 @@ the page loads or the dice button is pressed.
 Well, as explained above, just shows random advices that can be useful for u :D.
 As an extra I added a small animation to the dice button when it's clicked and
 also disables it until the GET request has finished.
+
+## Some problems
+
+The main problem with this challenge was the caching for the requests, as it's
+always the same url, it doesn't even tries to fetch new data. I fixed this by
+adding a query parameter "\_" with different values each time the request is
+made. 
+
+I didn't use the 'Cache-Control' header, because it made the request to fail
+with a CORS exception, I decided to avoid this, and just change one line...
