@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Advice generator app</title>
+
+    <link rel="stylesheet" href="styles/styles.css" />
+    <!-- Fonts stuff -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main class="container">
+      <div class="advice-container">
+        <h1 class="advice-id">Advice #<span id="adviceIdSpan">117</span></h1>
+        <p id="adviceTextP" class="advice-text">
+          "It is easy to sit up and take notice, what's difficult is getting up
+          and taking action."
+        </p>
+        <picture class=".decorative-separator">
+          <source
+            media="(max-width: 400px)"
+            srcset="images/pattern-divider-mobile.svg"
+          />
+          <img
+            src="images/pattern-divider-desktop.svg"
+            alt="Decorative separator"
+          />
+        </picture>
+
+        <button class="advice-dice-button" id="rolAdviceDice">
+          <img src="images/icon-dice.svg" alt="Rol dice" />
+        </button>
+      </div>
+    </main>
+
+    <!-- <footer class="attribution"> -->
+    <!--   Challenge by -->
+    <!--   <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" -->
+    <!--     >Frontend Mentor</a -->
+    <!--   >. Coded by -->
+    <!--   <a href="https://github.com/AngryMorrocoy/">Manuel Rivas ;)</a>. -->
+    <!-- </footer> -->
+  </body>
+</html>
